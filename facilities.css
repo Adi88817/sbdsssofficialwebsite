@@ -1,0 +1,12 @@
+header4,header6,header8,header10,header12,header14{
+  font-size: 30px;
+  font-family: 'dokdo';
+  text-align: center;
+  color: white;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+

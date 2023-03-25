@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>addmission form</title>
+  <link rel="stylesheet" href="/ADDMISSION FORM.css">
+</head>
+
+<body>
+ 
+<section></section>
+  <div class="container">
+    <form action="https://formspree.io/f/mqkodgog"
+  method="POST">
+      <h1> ADDMISSION FORM (2023)</h1>
+            <div class="main">
+     <input type="file" name="UPLOAD YOUR IMAGE" id="UPLOAD YOUR IMAGE" accept="image/jpg, image/png" id="UPLOAD YOUR IMAGE" onchange="getImagePreview(event)" autocomplete="off" required><hr> <b> ..UPLOAD YOUR PHOTO..</b>
+     
+     <div id="display_image"></div>
+     <div id="preview"></div></div>
+<div class="main2">
+    <h1> ..QR Code..</h1><hr>
+      <img src="/img/IMG_20230325_114756.jpg">
+    
+  </div>
+     
+      <div class="id">
+      <input type="text" name="FULL NAME" placeholder="FULL NAME :" autocomplete="off" required >
+      </div>
+      <div class="id">
+        <input type="text" name="Father's name" placeholder="Father's name :" autocomplete="off" required>
+        </div>
+        <div class="id">
+          <input type="text" name="Address" placeholder="Address :" autocomplete="off" required>
+          </div>
+        <div class="id">
+         <input  type="text" name="Date of Birth"  placeholder="Date of Birth :        (DD/MM/YY)"  autocomplete="off" required>
+          </div>
+          <div class="id">
+           <input type="text" name="Gender" placeholder="Gender :          Male/Female/Any Other" autocomplete="off" required>
+           </div>
+           <div class="id">
+             <input type="text" name="Category" placeholder="Category :      ST/SC/OBC/EWS/GENERAL" autocomplete="off" required>
+             </div>
+             <div class="id">
+               <input type="number" name="Mobile no." placeholder="Mobile no :" autocomplete="off" required>
+             </div>
+      <div class="id"> 
+      <input type="email" name="Email Address" placeholder="Email address :"  autocomplete="off" required >
+      </div>
+      <div class="id">
+        <input type="number" name="Adhaar number" placeholder="Aadhaar Number :" autocomplete="off" required>
+      </div>
+      <div class="id">
+        <input type="number" name="Class in which addmission was sought" placeholder="Class in which addmission was sought :" autocomplete="off" required>
+      </div>
+      <div class="id">
+        <input type="number" name="Addmission code" placeholder="Select any 4 digit Code" autocomplete="off" required>
+      </div>
+      
+      <h1> ..Note.. </h1>
+      <li> Addmission fee = 2000 Rupees . </li>
+      <li> First pay the Addmission fee on or code  . </li>
+      
+      <li> When you paid Addmission fee then your Addmission was done .</li>
+      <li>Addmission Open from 20/March/2023 To 30/June/2023 .</li>
+      <li> When you pay Addmission fee then also write Code which you selected in Addmission form .</li>
+     
+      <button> APPLY FOR ADDMISSION</button>
+    </form>
+      
+
+        <script type="text/javascript">
+   function getImagePreview(event)
+   {
+     var image = URL.createObjectURL(event.target.files[0]);
+     var imagediv = document.getElementById('preview');
+     var newimg = document.createElement('img');
+     newimg.src = image;
+     imagediv.appendChild(newimg);
+   }
+  </script>
+  </div>
+</body>
+
+</html>
